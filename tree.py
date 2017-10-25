@@ -2,7 +2,7 @@ import redis
 r=redis.Redis(host='localhost',port=6379,db=0)
 # d = {'0':123, '1':'345', '2':'678'}
 # print(type(d['0']))
-
+r.flushall()
 r.hmset('tree',{'0':'123', '1':'345', '2':'678'})
 b=r.hgetall('tree')
 print(b)
