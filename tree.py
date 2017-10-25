@@ -24,8 +24,11 @@ print (c['id'])
 # to delete the particular key
 r.delete('nodes')
 
+# to delete the particular field in a key
+r.hdel('tree','1')
+
 # to list all the keys 
-print(r.scan())
+r.scan()
 
 # to print all the keys matching specified pattern
 keys = r.scan_iter(match='aa*') 
