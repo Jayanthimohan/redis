@@ -43,4 +43,7 @@ pipe.get('bing')
 # the EXECUTE call sends all buffered commands to the server, returning a list of responses, one for each command.
 pipe.execute()
 
+# to save 
+r.save()
+
 
